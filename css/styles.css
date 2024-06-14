@@ -1,0 +1,360 @@
+:root{
+  --nolitc-bg-color: #168753;
+  --nolitc-text-color: #383838;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid black; */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.logo {
+  height: 90px;
+  padding-left: 120px;
+}
+
+.nolitc{
+  position: relative;
+  left: -220px;
+  color: hsla(152, 72%, 31%, 1);
+  font-weight: 900;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsla(241, 39%, 41%, 1);
+  font-weight: bolder;
+  padding-right: 50px;
+}
+
+/* container */
+.header-title{
+  background-color: var(--nolitc-bg-color);
+  padding: 1% 10%;
+  display: flex;
+  align-items: center;  
+}
+.header-title > a{
+  margin-right: 1%;
+}
+.header-title > h1{
+  color: #F4F8EE;
+  opacity: 0.6;
+}
+
+main{
+  padding: 0 10%;
+}
+.inputs:nth-child(1){
+  width: 40%;
+}
+main > h2{
+  font-weight: 900;
+  margin: 0.5% 0;
+  font-size: 2rem;
+  color: var(--nolitc-bg-color)
+}
+hr{
+  color: #403F91;
+  height: 4px;
+  background-color: #403F91;
+}
+
+.qualification-section > form{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs > h3{
+ padding: 2% 0;
+ font-size: 1.5rem;
+ color: var(--nolitc-text-color);
+}
+
+.input-data{
+  display: flex;
+  flex-direction: column;
+}
+.input-data > select, .input-data > input{
+  margin-top: 0.5%;
+}
+.content-info{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.input-radio, .input-checkbox{
+  display: inline-block;
+}
+.radio-civil-status{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+input, select{
+  border: none;
+  font-size: 1.5rem;
+  padding: 1% 2%;
+}
+
+input:focus{
+  outline: none;
+}
+
+input[type="checkbox"], input[type="radio"]{
+  border: 1px solid black;
+}
+.label-input-tag{
+  color: var(--nolitc-bg-color);
+  font-size: 1.2rem;
+}
+
+label{
+  cursor: pointer;
+}
+
+input[type="text"], input[type="number"], select, input[type="date"]{
+  border-bottom: 2px solid var(--nolitc-bg-color);
+  width: 80%;
+}
+
+input[type="date"]{
+  width: 25%;
+  font-size: 1rem;
+  padding: 1% 0;
+}
+.input-check{
+  padding: 2% 0;
+  font-size: 0.9rem;
+}
+.input-radio{
+  padding: 1% 0;
+  width: 20%;
+}
+
+.radio-input-sex, .radio-input-civil-status, .radio-input-employment-status{
+  padding: 2% 0;
+}
+
+.btn-submit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.btn-submit > button{
+  padding: 1% 10%;
+  background-color: var(--nolitc-bg-color);
+  border: none;
+  border-radius: 10px/10px;
+  color: var(--nolitc-text-color);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-submit > button:hover{
+  scale: 1.1;
+  transition: 0.3s;
+}
+.footer{
+  position: relative;
+  background-color: hsla(168, 100%, 25%, 1);
+  height: 200px;
+  width: auto;
+  z-index: 1;
+  top: 20px;
+}
+
+.republic{
+  font-size: 15px;
+  color: white;
+  position: relative;
+  top: 25px;
+  left: 20%;
+}
+.content{
+  color: white;
+  position: relative;
+  top: 5px;
+  left: 20%;
+  font-size: 11px;
+  font-weight: lighter;
+}
+
+.ph{
+  font-size: 15px;
+  color: white;
+  position: relative;
+  top: -75px;
+  left: 45%;
+}
+.learn{
+  color: white;
+  position: absolute;
+  top: 44px;
+  left: 45%;
+  font-size: 11px;
+  font-weight: lighter;
+}
+.gov1{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 45%;
+  top: 100px;
+}
+.gov2{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 45%;
+  top: 120px;
+}
+.gov3{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 45%;
+  top: 140px;
+}
+.goverment{
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 65%;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
+.pres{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 45px;
+}
+.vice{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 65px;
+}
+.senate{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 85px;
+}
+.house{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 105px;
+}
+.supreme{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 125px;
+}
+.appeals{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 145px;
+}
+.sandigan{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 165px;
+}
+.negros{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 65%;
+  top: 185px;
+}
+.visit{
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 85%;
+  font-weight: bold;
+}
+.paglaum{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 85%;
+  top: 35px;
+}
+.phone{
+  position: absolute;
+  color: white;
+  font-size: 11px;
+  font-weight: lighter;
+  left: 85%;
+  top: 85px;
+}
+.register{
+  position: absolute;
+  top: 25px;
+  font-size: 55px;
+  left: 160px;
+}
+.pic{
+  height: 90%;
+  left: 100px;
+  position: absolute;
+  top: 20px;
+}
